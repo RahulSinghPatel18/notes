@@ -1,0 +1,1832 @@
+                                                                                          JAVA Script
+
+1. variable -  value ko store and computer program ko manupulate Karne ke  liye variable ka use kiya data hai , Variable Hume Lebeling data with a descriptive name ke sath tareeka bhi provide karate hair jo information ko Store Karke Rakhta hai 
+
+                 2 way two make a variable 1. Var  , 2. Let  , ye constant variable hai 3. Const (value change ahi yogi)
+
+            A) var es5 old version hai  , var a=12; var a=24;  yha pe value update ho fyi hai value is a =24 ki , yah kiya ja sakta hai but yah nhi karna chaiye yah ek  function abcd { }  ke under (nearest function Tak chalte hai ) use kiya ja skate hai , Example me i ko 
+                Curly bracket  { } ke under kahi bhi use kr sakte hai ,  var window me attech karta hai 
+             
+                  Example 1.-  function abcd{
+                                        for(var i=12; i<=25; i++)
+                         //  Programmer yha pe var=19  create kr sakta hai esilye let variable ka use kiya jata hai //
+                                        Console.log(i);     }
+
+                  Example 2.-   {  
+                                   } for(var i=12; i<=25; i++);
+                                    Console.log(i); esme var ko sabhi jagah use car sake hai because humne function ke under               
+                                nhi banaya hai
+
+           B) Let- let es6 new version hai let ka , let a=12,let a=24; yha pe error hai a is already declared use hm only  Brecess Scop( ) ke under use karne ke liye karte hai eke alwa use nhi kar sakte, let window me attach nhi Hota
+
+               Example 1.-   {  
+                                   } for(let i=12; i<=25; i++);
+                                    Console.log(i); esme var ko sabhi jagah use chi kar sake hai because humne function ke      
+                                     under chi naya hai
+            C) const- const es6 new version hai const ka  eski value humesha constant rahti hai const a=12;  if we  written const a; and we not initialize  
+                then provide me  Undefined , Humne declare kiya but initialize nhi kiya 
+
+
+
+
+
+2.Compiler vs Interpreter - a) Compiler English code or Source code se   Binary code ( 0 1 )or Machine code me convert (convertion) karta hai , Compiler Convert Slow karta hai but Chalta Fast hai.             
+    
+b) But Interpreter - Interpreter executes the code line by line which makes synchronous in nature, ye Convert Fast karma hai but chalta  slow hai  , ye Byte code deta hai jo (0 1) nhi hai but  0 1 ke kareeb hai our eska conversion wapis 0 1 me yoga
+
+
+
+
+
+3.JIT ( just in time ) Compiler -  ye Convertion fast karma hai and Chalta bhi Fast hai , it is improve the performance  compiling time ko , yah brouses ke peechhe jo code chaleta hai rise enjoin Kahte hai 
+V8 enjoin google ne bnaya eska compiler Jit hai ye convertion deta hai interpreter se byte code me jo fast convert hota hai usi trime me jit usa machina code bnata hai raise ye run hota hai byte code ko machina code se replace kar diya jata hai 
+
+
+
+
+
+4. js Types Primitive vs Reference
+A) primitive-  number, string , boolean , symbol,null , undefined , Biglnt
+B)  Reference   ( ), { }, [ ]     Example 1. -  var a = 2; 
+                                                                  Var b;
+                                                                  b=b+ 12;   // b me a ka referente hai
+
+                                                       Examplec2. Var a =[1,2,3,4];
+                                                                    Var b=a;   // b me carry  value ka reference hai na ki actual value hai  Actual value ke liye 
+                                                                    Var a =[1,2,3,4];
+                                                                    Var b=[…a];  // there is ( a ) actual copied value  
+
+
+5.Conditional Statement expression different types - if   else   else if ,  Switch ,Ternary Operator , these statement Use the if statement to specify a block of JavaScript code to be executed if a condition is true. esme condition 2 hi hongi ( ) ke under ya to true ya to false value hi hogi 
+
+A).If else Example -   
+                               Var timer = 18
+                               if (time < 10) {
+                               greeting = "Good morning";
+                               } 
+                               else if (time < 20) 
+                              {
+                              greeting = "Good day";
+                              } 
+                              else {
+                              greeting = "Good evening";
+                              }
+
+B)  Switch  Example - 
+
+ const  Animal = "Giraffe";
+switch (Animal) {
+  case 1: ”Cow":
+  case 2: ”Giraffe":
+  case 3:” Dog":
+  case 4:”Pig":
+    console.log("This animal is not extinct.");
+    break;   // break is mendotry
+  case 5:”Dinosaur":
+  default:
+    console.log("This animal is extinct.");
+}
+
+C) Ternary Operator Example - 
+const score = 45;
+const scoreRating =
+  score > 70
+    ? "Excellent"
+    : score > 50
+    ? "Average"
+    : score > 40
+    ? "Fair"
+    : "Do better"
+console.log(scoreRating)
+
+
+6.Loops - for ,  forEach [ ], forin { }, do while ,while - Loops offer a quick and easy way to do something repeatedly 
+
+
+
+7.Es5 3 function. Es6 3 function
+
+
+
+
+
+
+
+                                                    Java Script Interview 37.MCQ & Answers
+
+                                                                              Basic   Part-1) :-
+
+1. What does JavaScript stand for?
+Answer: d. JavaScript
+
+2. Which keyword is used to declare a variable in JavaScript?
+Answer: b. var
+
+3. Which of the following is not a data type in JavaScript?
+Answer: b. float
+
+4. What is the result of 3 + '3' in JavaScript?
+Answer: c. '33'
+
+5. How do you comment out a single line of code in JavaScript?
+Answer: a. // This is a comment
+
+6. Which method is used to add an element to the end of an array in JavaScript?
+Answer: b. push()
+
+7. Which of the following is a correct way to define a function in JavaScript?
+a. function myFunction() {}
+b. let myFunction = function() {}
+c. myFunction: function() {}
+d. All of the above
+Answer: d. All of the above
+
+8. Which operator is used for strict equality comparison in JavaScript?
+Answer: b. ===
+
+9. What is the purpose of the typeof operator in JavaScript?
+Answer: b. To determine the data type of a value
+
+10. How do you declare a constant variable in JavaScript?
+**Answer: a. const myVar = 10;
+
+11. Which method is used to remove the last element from an array in JavaScript?
+**Answer: a. pop();
+
+12. What is the purpose of the document.getElementById() method in JavaScript?
+**Answer: b. To retrieve an element by its ID;
+
+13. Which function is used to parse a JSON string into a JavaScript object?
+**Answer: c. JSON.parse();
+
+14. What does the NaN value represent in JavaScript?
+**Answer: a. Not a Number;
+
+15. How do you create a loop in JavaScript?
+**Answer: c. for()
+
+16. Which operator is used for logical AND in JavaScript?
+**Answer: a. &&;
+
+17. What does the typeof null return in JavaScript?
+**Answer: b. "object"**
+console.log(typeof null); // Output: "object"
+
+18. How do you add a comment that spans multiple lines in JavaScript?
+**Answer: a. /* This is a comment */
+
+19. Which method is used to round a number to the nearest integer in JavaScript?
+**Answer: a. round()**
+let number = 3.7;
+let roundedNumber = Math.round(number);
+console.log(roundedNumber); // Output: 4
+
+20. What does the parseInt("10.5") function return in JavaScript?
+**Answer: a. 10**
+
+21. Which operator is used to assign a default value to a variable if it is undefined or null?
+**Answer: b. ||;    // OR operator
+
+22. What is the purpose of the addEventListener method in JavaScript?
+**Answer: c. To attach an event handler to an element**
+
+23. Which method is used to remove an element from the DOM in JavaScript?
+**Answer: d. remove()**
+
+24. How do you write an if statement in JavaScript?
+**Answer: a. if (condition) {}**
+
+25. What is the purpose of the return statement in a function in JavaScript?
+**Answer: b. To exit the function and return a value**
+
+26. How can you convert a string to lowercase in JavaScript?
+**Answer: a. toLowerCase();
+let originalString = "Hello World";
+let lowercaseString = originalString.toLowerCase();
+console.log(lowercaseString); // Output: "hello world"
+
+27. Which method is used to change the content of an HTML element in JavaScript?
+**Answer: d. innerHTML()**
+
+ 28.How can you find the index of the first occurrence of a specific element in an array?
+Answer:  indexof();            
+let myArray = [10, 20, 30, 40, 50];
+let elementToFind = 30;
+let indexOfElement = myArray.indexOf(elementToFind);
+console.log(`The index of ${elementToFind} is ${indexOfElement}`);
+
+28.WHICH METHOD IS USED TO SORT THE ELEMENT OF AN ARRAY?
+Answer: sort();
+let myArray = [5, 2, 9, 1, 5];
+myArray.sort();
+console.log(myArray); // Output: [1, 2, 5, 5, 9]
+
+29.How do you define a property I an object? 
+Answer: object.property = value;
+
+30.Which statement correctly a new object with another object as its prototype?
+Answer:  Object.create();
+let parentObject = { x: 10, y: 20 };
+let childObject = Object.create(parentObject);
+console.log(childObject.x); // Output: 10
+console.log(childObject.y); // Output: 20
+
+
+31.How do you delete a property from an abject?
+Answer. delete object.property;
+let myObject = {
+  name: 'John',
+  age: 30,
+  city: 'New York'
+};
+console.log(myObject); // Original object
+// Delete the 'age' property
+delete myObject.age;
+console.log(myObject); // Object with 'age' property deleted
+
+
+32.How do you get all the keys of an object as an array?
+Answer: Object.keys();
+const myObject = {
+  name: "John",
+  age: 30,
+  city: "New York"
+};
+const keysArray = Object.keys(myObject);
+console.log(keysArray); // Output: ["name", "age", "city"]
+
+
+33.What is the purpose of the setTimeout() function?
+Answer: to execute a function after  a specified delay.
+
+
+34.What is the purpose of the setInterval() function?
+Answer: b) To execute a function at regular intervals;
+
+
+35How is the time interval specified in setInterval() measured? Answer: a) In milliseconds;
+
+
+36.Which of the following is a valid use case for setInterval()?		 Answer: b) Running an animation loop;
+
+
+37.What is the return value of the setInterval() function? Answer: b) A unique identifier for the interval;
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                            Java Script Interview 29.Questions & Answers
+
+                                                                  Advance  Part-2) :-
+
+
+1. What is the primary use of a closure in JavaScript?
+Answer: b. To encapsulate and preserve a function's local variables
+
+2. Which design pattern promotes the creation of objects without specifying the exact class of object that will be created?
+Answer: b. Factory
+
+3. What is the purpose of the bind method in JavaScript?
+Answer: c. To set the value of this for a function
+
+4. Which of the following is true about the Event Loop in JavaScript?
+Answer: b. It manages asynchronous tasks and callbacks.
+
+5. What is the difference between null and undefined in JavaScript?
+Answer: a. They are equivalent and can be used interchangeably.
+
+6. What is the purpose of the map() function in JavaScript?
+Answer: a. To create a new array with transformed elements
+
+7. In JavaScript, what is the purpose of the this keyword inside an object's method?
+Answer: a. It refers to the object itself.
+
+8. Which method is used for making an HTTP request in JavaScript?
+Answer: a. fetch();
+
+9. What is a callback function in JavaScript?
+Answer: c. A function passed as an argument to another function to be executed later;
+
+10. What is the purpose of the Promise object in JavaScript?
+Answer: a. To represent a future value that may be available or an error;
+
+11. What is the purpose of the JSON.stringify() method in JavaScript?
+Answer: b. To convert an object to a JSON string**
+
+12. What is a callback function in JavaScript?
+Answer: c. A function passed as an argument to another function to be executed later**
+
+13. What is the purpose of the Promise object in JavaScript?
+Answer: a. To represent a future value that may be available or an error
+
+14. What is the purpose of the JSON.stringify() method in JavaScript?
+Answer: b. To convert an object to a JSON string
+
+15. What is the purpose of the JSON.parse() method in JavaScript?
+Answer: a. To convert a JSON string to an object
+
+16. Which of the following statements is true about the async/await syntax in JavaScript?
+Answer: b. It is a replacement for callbacks and promises.
+
+17. What is the purpose of the localStorage object in JavaScript?
+Answer: b. To store key-value pairs in the browser
+
+18. In JavaScript, what is the purpose of the setTimeout() function?
+Answer: b. To delay the execution of a function
+
+19. What is the purpose of the super keyword in JavaScript?
+Answer: b. To reference the parent class in an extended class
+
+20. Which method is used to remove an element from the DOM in JavaScript?
+Answer: a. `removeChild()`
+
+21.How can you stop the execution of a function scheduled with setInterval()?		 Answer: b) Using the clearInterval() function with the interval's identifier
+
+
+22.What is the purpose of the promise.all() method?
+Answer: To wait for all promises in an iterable to resolve;                  
+
+
+23.how can you convert a number to string?
+Answer: toString();
+let number = 42;
+let numberAsString = number.toString();
+console.log(typeof numberAsString); // Output: "string"
+
+
+24.What is the purpose of async function in js?
+Answer: To simplify working with asynchronous code and promises;
+
+
+25.What is main role of event loop in asynchronous js?
+Answer: It processes the message queue and executes the queued functions;
+
+
+26.How do you remove whitespace from the beginning and end of a string?
+Answer: trim();
+let str = "   This is a string with whitespace   ";
+let trimmedStr = str.trim();
+console.log(trimmedStr); // Output: "This is a string with whitespace"
+
+27.How do you change the text content of an HTML element using js?
+Answer: element.inner.HTML = “new text”
+
+28.How do you set a CSS style for an HTML element using js?
+Answer: element.style.property = value
+
+29.How do you append an HTML element to another element?
+Answer: parentElement.append(childElement)
+// Step 1: Select the parent element
+const parentElement = document.getElementById('parent'); // Replace 'parent' with the actual parent element ID
+
+// Step 2: Create the child element
+const childElement = document.createElement('div'); // Create a <div> element (you can create any element)
+
+// Step 3: Append the child element to the parent element
+parentElement.appendChild(childElement);
+
+
+
+
+
+
+
+
+
+
+                                                 Java Script Interview 30. Questions & Answers
+
+                                                                              Basic   Part-3) :
+
+1. What is JavaScript?
+Answer: JavaScript is a high-level, interpreted programming language used to create dynamic and interactive web applications.
+
+
+2. How can you include JavaScript in an HTML file?
+Answer: JavaScript can be included in an HTML file using the <script> tag, either inline within the HTML or by linking to an external script file.
+
+
+3. What is a variable in JavaScript?
+Answer: A variable is a container used to store data, such as numbers, text, or objects, for later use.
+
+
+4. What are the basic data types in JavaScript?
+Answer: JavaScript has several basic data types, including Number, String, Boolean, Object, and Null.
+
+
+5. How do you declare a variable in JavaScript using let, const, and var?
+Answer: Variables are declared as follows:-
+       let is used for variables with block scope and allows reassignment.
+       const is used for constant variables with block scope.
+       var is used for variables with function scope and allows reassignment.
+
+
+6. How do you comment in JavaScript?
+Answer: You can use // for single-line comments and /* */ for multi-line comments in JavaScript.
+
+
+7. What is the purpose of the console.log() function in JavaScript?
+Answer: The console.log() function is used to print output to the browser console for debugging and logging.
+
+
+8. What is the difference between == and === in JavaScript for equality comparison?
+Answer: == checks for equality without considering data type, while === checks for equality while also considering data type.
+
+
+9. How do you create an array in JavaScript?
+Answer: An array is created by enclosing a comma-separated list of values in square brackets, like this: let myArray = [1, 2, 3];
+
+
+10. How do you access elements in an array in JavaScript?
+Answer: You can access elements in an array using their index. For example, myArray[0] accesses the first element of the array.
+
+
+11. What is a function in JavaScript, and how do you define one?
+Answer: A function is a reusable block of code. You can define a function using the function keyword, like this: function myFunction() { /* code here */ }
+
+
+12. How do you call a function in JavaScript?
+Answer: You call a function by using its name followed by parentheses, like this: myFunction();
+
+
+13. What is the purpose of conditional statements in JavaScript?
+Answer: Conditional statements, like if, else if, and else, allow you to execute code conditionally based on certain conditions.
+
+
+14. How do you write an if statement in JavaScript?
+Answer: An if statement is written as if (condition) { /* code to execute if condition is true */ }
+
+
+15. How do you write a for loop in JavaScript?
+Answer: A for loop is written like this:
+for (let i = 0; i < 5; i++) { // code to repeat }
+
+
+**16. What is the purpose of the switch statement in JavaScript?
+Answer: The switch statement is used to select one of many code blocks to execute, depending on the value of an expression.
+
+
+**17. How do you declare an object in JavaScript?
+Answer: An object is declared using curly braces and key-value pairs, like this: let person = { name: "John", age: 30 };
+
+
+**18. How do you access object properties in JavaScript?
+Answer: You can access object properties using dot notation, like this: person.name or bracket notation, like this: person["name"].
+
+
+**19. What is an event handler in JavaScript?
+Answer: An event handler is a function that responds to events such as mouse clicks, keypresses, or form submissions in a web page.
+
+
+**20. How do you add an event listener to an HTML element in JavaScript?
+Answer: You can use the addEventListener() method to attach an event listener to an HTML element, like this:
+document.getElementById("myButton").addEventListener("click", myFunction);
+
+
+**21. What is a callback function in JavaScript, and when is it used?
+Answer: A callback function is a function that is passed as an argument to another function and is executed when the other function is completed or when a specific event occurs. It's commonly used for asynchronous operations.
+
+
+**22. What is a promise in JavaScript, and how does it handle asynchronous operations?
+Answer: A promise is an object representing the eventual completion or failure of an asynchronous operation. It allows you to handle asynchronous operations in a more structured and manageable way.
+
+
+**23. How do you declare and initialize a constant variable in JavaScript?
+Answer: A constant variable is declared and initialized using the const keyword, like this: const pi = 3.14;
+
+
+**24. What is the purpose of the return statement in a JavaScript function?
+Answer: The return statement is used to specify the value that a function should return when it is called.
+
+
+**25. What is the purpose of the typeof operator in JavaScript?
+Answer: The typeof operator is used to determine the data type of a value or expression.
+
+
+**26. How do you concatenate strings in JavaScript?
+Answer: You can concatenate strings using the + operator, like this: let greeting = "Hello, " + "World!";
+
+
+**27. How do you convert a string to an integer in JavaScript?
+Answer: You can convert a string to an integer using the parseInt() function, like this: let num = parseInt("42");
+
+
+**28. How do you create a comment that spans multiple lines in JavaScript?
+Answer: You can create multi-line comments using /* */, 
+   like this:
+/* This is a multi-line comment. */
+
+
+**29. What is the purpose of the NaN value in JavaScript?
+Answer: NaN stands for "Not-a-Number" and is used to represent an unrepresentable value, often resulting from mathematical operations that don't produce a valid number.
+
+
+**30. How do you write a while loop in JavaScript?
+Answer: A while loop is written like this:
+while (condition) { // code to repeat }
+
+
+
+
+
+
+
+         
+                                               Java Script Interview Technical 18. Questions & Answers
+
+                                                                              Basic   Part-4) :
+
+1. What is JavaScript's basic syntax for declaring a variable?
+// Example let myVar = 42;
+Answer: The basic syntax for declaring a variable in JavaScript is to use the let, const, or var keyword followed by the variable name.
+
+
+2. How can you define a constant in JavaScript?
+// Example const pi = 3.14;
+Answer: Constants are defined using the const keyword, as shown in the example.
+
+
+3. What is the purpose of the typeof operator in JavaScript?
+// Example typeof "Hello"; // Output: "string"
+Answer: The typeof operator is used to determine the data type of a variable or expression, as demonstrated in the example.
+
+
+4. How do you write a comment in JavaScript?
+// This is a single-line comment /* This is a multi-line comment */
+Answer: JavaScript supports both single-line comments using // and multi-line comments using /* */, as shown in the example.
+
+
+5. What is the purpose of the alert() function in JavaScript?
+alert("Hello, World!");
+Answer: The alert() function is used to display a dialog box with a message, as shown in the example.
+
+
+6. How do you declare and define a function in JavaScript?
+// Declaration function sayHello() { // Function definition console.log("Hello, World!"); } // Call the function sayHello();
+Answer: Functions are declared using the function keyword, and their code is defined within curly braces, as demonstrated in the example.
+
+
+7. What is the output of the following code?
+console.log(5 + "5");
+Answer: The code will output "55" because JavaScript performs type coercion, converting the number 5 to a string and concatenating it with the string "5".
+
+
+8. How can you check if a variable is undefined in JavaScript?
+if (typeof someVar === "undefined") { console.log("someVar is undefined"); }
+Answer: You can use the typeof operator to check if a variable is undefined, as demonstrated in the example.
+
+
+9. What is an array in JavaScript, and how can you create one?
+// Creating an array const fruits = ["apple", "banana", "cherry"];
+Answer: An array is an ordered list of values. You can create an array using square brackets, as shown in the example.
+
+
+10. How do you access elements in an array in JavaScript?
+const fruits = ["apple", "banana", "cherry"]; console.log(fruits[1]); // Output: "banana"
+Answer: You can access elements in an array using square brackets and the index, as demonstrated in the example.
+
+
+11. What is the difference between let, const, and var for variable declaration?
+var x = 10; // Function-scoped let y = 20; // Block-scoped const z = 30; // Block-scoped and constant
+Answer: var is function-scoped, let and const are block-scoped, and const is used for constant values, as shown in the example.
+
+
+12. What is the purpose of the this keyword in JavaScript?
+const person = { name: "John", sayHello: function() { console.log(`Hello, my name is ${this.name}`); } }; person.sayHello();
+Answer: The this keyword refers to the current object and is used to access its properties and methods, as demonstrated in the example.
+
+
+13. How do you loop through elements of an array in JavaScript using a for loop?
+const fruits = ["apple", "banana", "cherry"]; for (let i = 0; i < fruits.length; i++) { console.log(fruits[i]); }
+Answer: You can use a for loop with an index to iterate through the elements of an array, as shown in the example.
+
+
+14. What is a callback function in JavaScript, and when is it commonly used?
+function fetchData(callback) { // Simulate data fetching setTimeout(function() { const data = "Some data"; callback(data); }, 1000); } function processData(data) { console.log(`Processed data: ${data}`); } fetchData(processData);
+Answer: A callback function is a function passed as an argument to another function, which is then called when a specific event occurs or when an asynchronous operation is completed. Callbacks are commonly used for handling asynchronous tasks, as demonstrated in the example.
+
+
+15. How do you define and handle exceptions in JavaScript using a try...catch block?
+try { const result = 10 / 0; console.log(result); } catch (error) { console.error("An error occurred: " + error); }
+Answer: You can use a try...catch block to catch and handle exceptions in JavaScript, as shown in the example.
+
+
+16. What is the purpose of the JSON.stringify() method in JavaScript?
+const person = { name: "Alice", age: 30 }; const jsonString = JSON.stringify(person); console.log(jsonString);
+Answer: The JSON.stringify() method is used to convert a JavaScript object to a JSON string, as demonstrated in the example.
+
+
+17. How do you make an HTTP GET request using the fetch() function in JavaScript?
+fetch("https://jsonplaceholder.typicode.com/posts/1") .then(response => response.json()) .then(data => console.log(data)) .catch(error => console.error("Error:", error));
+Answer: The fetch() function is used to make HTTP requests. In the example, it makes a GET request to a URL and processes the response using promises.
+
+
+
+18. What is the purpose of the localStorage object in JavaScript?
+// Storing data in local storage localStorage.setItem("username", "John"); // Retrieving data from local storage const username = localStorage.getItem("username"); console.log(username);
+Answer: The localStorage object is used to store key-value pairs in the web browser, allowing data to persist across browser sessions, as shown in the example.
+
+
+
+
+
+
+
+Node Js
+
+
+
+// const fs = require("fs");
+
+// 1.creating a new file jo exist n karti ho
+// fs.writeFileSync("read.txt"," Welcome my channle");
+// fs.writeFileSync("read.txt","rahul singh patel ,Welcome my channle");
+
+// example same - writeFile
+// writeFile asysnchronous - folder ke under file banana
+// const fs = require("fs");
+// fs.writeFile("./rahul/bio.txt","Hello Everyone kaiose ho",(err)=>{
+//     console.log("files created");
+// });
+
+//2. appendFileSync -  ka use data replace kiye bina new data ko add krnaa
+// fs.appendFileSync("read.txt", " how are you am fine : "+"\n");
+
+
+
+// 3. readFileSync - Read to inside file data example a)-
+// const buf_data= fs.readFileSync("read.txt");
+// org_data =  buf_data.toString();
+// console.log(org_data);
+
+
+
+
+
+// example b)- eske liye html file banani hogi jisme h1 property dikhane ke liye web per
+// var http = require('http');
+// var fs= require('fs');
+
+// http.createServer(function(req,res){
+// fs.readFile('demo.html',function(err,data){
+//     res.writeHead(200,{'Content-type':'text/html'})
+//  res.write(data);
+//  return res.end();
+
+// })
+// }).listen(4000)
+
+
+//4. rename file - old property then new property
+// fs.renameSync("read.txt","readwrite.txt")
+
+// example - rename
+//rename - older path and new path
+// const fs = require("fs");
+// fs.rename("./rahul/bio.txt","./rahul/Mybio.txt",()=>{
+//   console.log("rename is done !")
+// })
+
+
+// esse hom computer ke under ki ceeze padh sakte hai
+// const os = require('os');
+
+// console.log(os.hostname())
+// console.log(os.platform())
+// console.log(os.freemem())
+
+
+
+// 5.readdir -
+// const directoryPath = 'example'; // read the next  directory
+
+// fs.readdir(directoryPath, (error, files) => {
+//     if(error){
+//         console.log('error is reading ...');
+//         console.log(error.message);
+//     }else{
+//         console.log('content is here ...');
+//         console.log(files);
+//     }
+// })
+
+
+// 6.mkdir - new folder creating
+//  example a)-
+// const fs = require('fs');
+
+// fs.mkdir("rahul",(err)=>{
+//     console.log("folder created !")
+// });
+
+// make directory sysnchronous
+//  example b)-
+// const fs = require("fs");
+
+// try {
+// if(!fs.existsSync('foo')){
+//     fs.mkdirSync('foo');
+//     console.log("directory created");
+// }else{
+//     console.log("directory already exists...")
+// }
+// } catch (error) {
+//     console.log("error accured:", error) 
+// }
+// console.log("after mkdirSync");
+
+
+// b)example - make directory asynchronous
+// const fs = require("fs");
+// fs.mkdir('food', function(err){
+//     if(err){
+//         console.log("error occured", err)
+//         return;
+//     }
+//         console.log("directory created !")
+    
+// })
+
+
+// 7.appendFile -  add new data without overloading data
+// const fs = require("fs");
+// fs.appendFile("./rahul/bio.txt", " please like and share video"+"\n", (err)=>{
+//     console.log("files data appended !")
+// })
+
+
+// 8.readFile - read the data without buffring the data
+// const fs = require("fs");
+
+// fs.readFile("./rahul/bio.txt", 'utf-8',(err, data)=>{
+//   console.log(data)
+// })
+
+
+//  9.rmdir - deletd your folder
+// const fs = require("fs");
+// fs.rmdir("./rahulSingh", (err)=>{
+//   console.log("Folder Deleted Sucessfully !")
+// })
+
+
+
+// 10.unlink - deletd your file 
+// const fs = require("fs");
+// fs.unlink("./rahul/Mybio.txt", (err)=> {
+//   console.log("File Deleted Sucessfully !")
+// })
+
+
+// 11. CopyFile -  copied the file 
+// const fs = require("fs");
+// fs.copyFileSync("./read.txt","./destination.txt")
+
+
+
+
+
+
+
+                                                                         // Creating A server
+
+// 1. create a server - 
+
+// const http = require("http");
+
+// const server =  http.createServer((req,res)=>{
+//     res.end("Hello from the others sides");
+// });
+
+// server.listen(8000,"127.0.0.1",()=>{
+//     console.log("listening to the port 8000....");
+// })
+
+
+
+
+
+
+
+                                                                         // install ejs package
+
+// 1 ejs setup karo
+// 2 views folder create karo
+// 3  ejs pages banao
+// 4 ab render karo pages ko
+
+
+//       make a public folder
+
+// 5 make 3 more folders inside it
+// 6 stylesheets, javascripts, images which will 
+// contain 3 sepearate type of files as stated bytheir names
+// 7 now setup with boilerplate code for the same
+// 8 now understand the path ejs
+
+
+
+// 1.install express and ejs package command is - npm i express ejs
+// and install nodemon package - npm i nodemon
+const express = require('express');
+const { writeFile } = require('fs');
+// call the express
+const app = express();
+const path = require("path");
+
+// set the view engine to ejs
+app.set('view engine','ejs');
+
+// static - imges, stylesheets and scripts ka path hai
+// app.use routes ke liye chalta hai 
+app.use(express.static(path.join(__dirname, 'public')));
+
+// expressjs parser- se 2 line add internet se karna using for post in html
+app.use(express.urlencoded({ extended: false }))
+app.use(express.json())
+
+// index page
+// use res.render to load up an ejs view file
+app.get('/', function(req, res) {
+  res.render('index');
+  // views ke under koi bhi page render kar rhe hai to 
+  // hume index,ejs nhi likhna hai automatice likh jata hai 
+});
+
+// more page
+app.post('/login', function(req, res) {
+  res.send(req.body);
+  // jisme double or single code nhi hota use variable, function, property
+});
+
+// about page
+app.get('/contact', function(req, res) {
+  res.send('contact');
+});
+
+app.listen(3000,()=>{
+  console.log("listening port 3000...")
+});
+
+
+
+
+
+                                                                          // Express Js
+
+
+// 1.install express and ejs package command is - npm i express ejs
+// and install nodemon package - npm i nodemon
+
+const express = require('express');
+// call the express
+const app = express();
+const path = require("path");
+
+// set the view engine to ejs
+app.set('view engine', 'ejs');
+
+// static imges, stylesheets and scripts ka path hai
+// app.use routes ke liye chalta hai 
+
+app.use(express.static(path.join(__dirname, 'public')));
+
+
+// index page
+// use res.render to load up an ejs view file
+
+app.get('/', function(req, res) {
+  res.render('index');
+  // views ke under koi bhi page render kar rhe hai to 
+  // hume index,ejs nhi likhna hai automatice likh jata hai 
+});
+
+// more page
+app.get('/more', function(req, res) {
+  res.render('more');
+  // jisme double or single code nhi hota use variable, function, property
+});
+
+// about page
+app.get('/contact', function(req, res) {
+  res.render('contact');
+});
+
+app.listen(3000,()=>{
+  console.log("listening port 3000...")
+});
+
+
+
+
+
+
+
+
+                                                Data server me bhejna 
+
+1.Dynamic routes ka data -> req.params
+
+2.From get type ka data -> req.query
+
+3.From post type ka data -> req.body
+
+                                                
+app.get('/login', function(req, res) {
+  res.send('login');
+ });
+
+
+
+
+
+                                                                   Express-Generator 
+
+   Express-generator install command for Mac open the terminal direct and type -
+
+  cd Desktop    
+  express aaa --view=ejs
+  Fir one  folder mein npm I express command
+
+  Npx nodemon
+
+
+                      OR
+
+
+cd Desktop    
+ ls
+cls
+clear
+express aaa --view=ejs
+cd folder name ("kuchh bhi")
+npm i
+code .
+cls
+
+
+
+
+
+Express generator ki  js file ko calano ke liye npx nodemon  index.js  enter 
+karna hoga MacBook main ye command bar bar dalni hogi koi shortcut nhi h
+
+
+
+
+
+
+
+
+
+         
+
+DATABASE Server
+
+Installation - MONGODB AND MONGODB  and setup
+Mongoose install   //  npm I mongoose
+Mongoose connection setup
+Schema creation
+Model creation
+Model export
+Create
+
+
+Mogodb run command
+
+./mongod --dbpath /Users/rahulsinghpatel/Desktop/db
+
+
+
+                                                MongoDB
+￼
+
+
+Definition-
+MongoDB is an open-source document-oriented database that is designed to store a large scale of data and also allows you to work with that data very efficiently. It is categorized under the NoSQL (Not only SQL) database because the storage and retrieval of data in the MongoDB are not in the form of tables. 
+The MongoDB database is developed and managed by MongoDB.Inc under SSPL(Server Side Public License) and initially released in February 2009. It also provides official driver support for all the popular languages like C, C++, C#, and .Net, Go, Java, Node.js, Perl, PHP, Python, Motor, Ruby, Scala, Swift, Mongoid. So, that you can create an application using any of these languages. Nowadays there are so many companies that used MongoDB like Facebook, Nokia, eBay, Adobe, Google, etc. to store their large amount of data. 
+
+ 
+Use-
+MongoDB is built on a scale-out architecture that has become popular with developers of all kinds for developing scalable applications with evolving data schemas. As a document database, MongoDB makes it easy for developers to store structured or unstructured data. It uses a JSON-like format to store documents.
+
+Server are two types 1.Application Server and 2. dataBase server
+Application server ke through hm database se conversation car pate dian direct nhi kar sakte beacause any person are change the data in the database  , database are two types - 1. SQL.  RDBMS     2. NOSQL.  NRDBMS  
+
+    
+
+   1. DB. 2. Modules 3. Clutter. 4. Schema
+
+1.DATABASE-
+A database is an organized collection of structured information, or data, typically stored electronically in a computer system. A database is usually controlled by a database management system (DBMS).
+
+
+2.Modules-
+A module is a collection of declarations, statements, and procedures that are stored together as a unit. A module can be either a class module or a standard module. Class modules are attached to forms or reports, and usually contain procedures that are specific to the form or report they're attached to.
+
+3.Clutter-
+A database cluster is a collection of databases that is managed by a single instance of a running database server. After initialization, a database cluster will contain a database named postgres, which is meant as a default database for use by utilities, users and third party applications.
+
+4.Schema-
+A database schema refers to the logical and visual configuration of the entire relational database. The database objects are often grouped and displayed as tables, functions, and relations. A schema describes the organization and storage of data in a database and defines the relationship between various tables.
+
+
+Those four methods include:-
+
+1.deleteOne()
+2.deleteMany()
+3.findOneAndDelete()
+4.remove()
+
+
+Connect MongoDB Command
+
+
+For major project opening
+Go to ‘bin’ inside this folder-> “mongodb-macos-aarch64-7.0.2 6.02.19 PM”
+
+
+And run this command to run MongoDB Database ->
+
+
+./mongod --dbpath /Users/rahulsinghpatel/Desktop/db
+
+
+
+
+
+
+
+
+
+Multer
+
+
+Npm I 
+Npm I uuid multer
+
+
+
+Use muster- 
+
+It is used for uploading files with filtering files,
+Multer provides a simple and flexible API that enables developers to define various file upload options, handle file validation, and manage file storage. Simple Integration with Express: One of the key advantages of Multer is its seamless integration with Express, a widely used web application framework for Node
+
+
+                                                 Ajax
+Refresh the file not refresh the route
+
+ Npm I  Ajax
+
+
+
+
+                                                 Socket.io
+
+Real time comunicatiomn or  the live chatting
+
+
+ Npm I  socket.io
+
+
+
+                                                
+
+
+                                                
+
+ Passport 
+
+Installation packages -
+
+Database run command -
+
+./mongod --dbpath /Users/rahulsinghpatel/Desktop/db
+
+ npm i passport passport-local passport-local-mongoose mongoose express-session
+
+
+ npm i passport passport-local passport-local-mongoose mongoose express-session multer uuid express-session dot-env dotenv mongo 
+
+Which these process install passport
+
+Which use these are login, logout and already login process can do
+
+
+                                         Socket io
+
+npm I  socket.io
+
+Sabse pahle es link me Jake questions me jar all 1st, 2nd ,3rd setup complete kro
+
+1st- sabre pale flag file banao file ka name socketapi.js hona chaiye
+
+2nd
+-www me Jake 9 and 23 line me paste bro
+10th line me
+let socketapi = require("../socketapi"); 
+
+23line me
+socketapi.io.attach(server);
+
+
+
+3rd- index.ejs me Jake body ke bad paste bro
+ <script src="/socket.io/socket.io.js"></script>
+    <script>
+        var socket = io();
+    </script>
+Ye sab karne ke bad 3000 pe reloj krke termal me check kro
+
+
+https://stackoverflow.com/questions/24609991/using-socket-io-in-express-4-and-express-generators-bin-www#answer-28325154
+
+
+                                         Flash messages
+
+Installation packages -
+
+npm i connect-flash
+
+emit= send data
+on=recive data
+
+
+
+Google-auth
+
+Installation packages -
+npm i dot-env
+npm i express-session
+npm i connect-mongo
+
+require('dotenv').config();
+
+Passport.js website
+And  usehttps://console.cloud.google.com/welcome?project=calm-aegis-413605
+
+
+￼
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                         Rozarpay
+
+Installation packages -
+Npm I razorpay
+
+
+
+￼
+// const fs = require("fs");
+
+// 1.creating a new file jo exist n karti ho
+// fs.writeFileSync("read.txt"," Welcome my channle");
+// fs.writeFileSync("read.txt","rahul singh patel ,Welcome my channle");
+
+// example same - writeFile
+// writeFile asysnchronous - folder ke under file banana
+// const fs = require("fs");
+// fs.writeFile("./rahul/bio.txt","Hello Everyone kaise ho",(err)=>{
+//     console.log("files created");
+// });
+
+
+//2. appendFileSync -  ka use data replace kiye bina new data ko add krnaa
+// fs.appendFileSync("read.txt", " how are you am fine : "+"\n");
+
+
+// 3. readFileSync - Read to inside file data example a)-
+// const buf_data= fs.readFileSync("read.txt");
+// org_data =  buf_data.toString();
+// console.log(org_data);
+
+// example b)- eske liye html file banani hogi jisme h1 property dikhane ke liye web per
+// var http = require('http');
+// var fs= require('fs');
+
+// http.createServer(function(req,res){
+// fs.readFile('demo.html',function(err,data){
+//     res.writeHead(200,{'Content-type':'text/html'})
+//  res.write(data);
+//  return res.end();
+
+// })
+// }).listen(4000)
+
+
+//4. rename file - old property then new property
+// fs.renameSync("read.txt","readwrite.txt")
+
+// example - rename
+//rename - older path and new path
+// const fs = require("fs");
+// fs.rename("./rahul/bio.txt","./rahul/Mybio.txt",()=>{
+//   console.log("rename is done !")
+// })
+
+
+// esse hom computer ke under ki ceeze padh sakte hai
+// const os = require('os');
+
+// console.log(os.hostname())
+// console.log(os.platform())
+// console.log(os.freemem())
+
+// 5.readdir -
+// const directoryPath = 'example'; // read the next  directory
+
+// fs.readdir(directoryPath, (error, files) => {
+//     if(error){
+//         console.log('error is reading ...');
+//         console.log(error.message);
+//     }else{
+//         console.log('content is here ...');
+//         console.log(files);
+//     }
+// })
+
+
+// 6.mkdir - new folder creating
+//  example a)-
+// const fs = require('fs');
+
+// fs.mkdir("rahul",(err)=>{
+//     console.log("folder created !")
+// });
+
+// make directory sysnchronous
+//  example b)-
+// const fs = require("fs");
+
+// try {
+// if(!fs.existsSync('foo')){
+//     fs.mkdirSync('foo');
+//     console.log("directory created");
+// }else{
+//     console.log("directory already exists...")
+// }
+// } catch (error) {
+//     console.log("error accured:", error) 
+// }
+// console.log("after mkdirSync");
+
+
+// b)example - make directory asynchronous
+// const fs = require("fs");
+// fs.mkdir('food', function(err){
+//     if(err){
+//         console.log("error occured", err)
+//         return;
+//     }
+//         console.log("directory created !")
+    
+// })
+
+
+// 7.appendFile -  add new data without overloading data
+// const fs = require("fs");
+// fs.appendFile("./rahul/bio.txt", " please like and share video"+"\n", (err)=>{
+//     console.log("files data appended !")
+// })
+
+
+// 8.readFile - read the data without buffring the data
+// const fs = require("fs");
+
+// fs.readFile("./rahul/bio.txt", 'utf-8',(err, data)=>{
+//   console.log(data)
+// })
+
+
+//  9.rmdir - deletd your folder
+// const fs = require("fs");
+// fs.rmdir("./rahulSingh", (err)=>{
+//   console.log("Folder Deleted Sucessfully !")
+// })
+
+
+
+// 10.unlink - deletd your file 
+// const fs = require("fs");
+// fs.unlink("./rahul/Mybio.txt", (err)=> {
+//   console.log("File Deleted Sucessfully !")
+// })
+
+
+// 11. CopyFile -  copied the file 
+// const fs = require("fs");
+// fs.copyFileSync("./read.txt","./destination.txt")
+
+
+
+
+
+
+
+                // Creating A server
+
+// 1. create a server - 
+
+// const http = require("http");
+
+// const server =  http.createServer((req,res)=>{
+//     res.end("Hello from the others sides");
+// });
+
+// server.listen(8000,"127.0.0.1",()=>{
+//     console.log("listening to the port 8000....");
+// })
+
+
+
+
+
+
+
+// install ejs package
+
+// 1 ejs setup karo
+// 2 views folder create karo
+// 3  ejs pages banao
+// 4 ab render karo pages ko
+
+
+//       make a public folder
+
+// 5 make 3 more folders inside it
+// 6 stylesheets, javascripts, images which will 
+// contain 3 sepearate type of files as stated bytheir names
+// 7 now setup with boilerplate code for the same
+// 8 now understand the path ejs
+
+
+
+// 1.install express and ejs package command is - npm i express ejs
+// and install nodemon package - npm i nodemon
+const express = require('express');
+const { writeFile } = require('fs');
+// call the express
+const app = express();
+const path = require("path");
+
+// set the view engine to ejs
+app.set('view engine','ejs');
+
+// static - imges, stylesheets and scripts ka path hai
+// app.use routes ke liye chalta hai 
+app.use(express.static(path.join(__dirname, 'public')));
+
+// expressjs parser- se 2 line add internet se karna using for post in html
+app.use(express.urlencoded({ extended: false }))
+app.use(express.json())
+
+// index page
+// use res.render to load up an ejs view file
+app.get('/', function(req, res) {
+  res.render('index');
+  // views ke under koi bhi page render kar rhe hai to 
+  // hume index,ejs nhi likhna hai automatice likh jata hai 
+});
+
+// more page
+app.post('/login', function(req, res) {
+  res.send(req.body);
+  // jisme double or single code nhi hota use variable, function, property
+});
+
+// about page
+app.get('/contact', function(req, res) {
+  res.send('contact');
+});
+
+app.listen(3000,()=>{
+  console.log("listening port 3000...")
+});
+
+
+
+
+
+
+                // Creating A server
+
+// 1. create a server - 
+
+// const http = require("http");
+
+// const server =  http.createServer((req,res)=>{
+//     res.end("Hello from the others sides");
+// });
+
+// server.listen(8000,"127.0.0.1",()=>{
+//     console.log("listening to the port 8000....");
+// })
+
+
+
+
+
+
+
+// install ejs package
+
+// 1 ejs setup karo
+// 2 views folder create karo
+// 3  ejs pages banao
+// 4 ab render karo pages ko
+
+
+//       make a public folder
+
+// 5 make 3 more folders inside it
+// 6 stylesheets, javascripts, images which will 
+// contain 3 sepearate type of files as stated bytheir names
+// 7 now setup with boilerplate code for the same
+// 8 now understand the path ejs
+
+
+
+// 1.install express and ejs package command is - npm i express ejs
+// and install nodemon package - npm i nodemon
+const express = require('express');
+const { writeFile } = require('fs');
+// call the express
+const app = express();
+const path = require("path");
+
+// set the view engine to ejs
+app.set('view engine','ejs');
+
+// static - imges, stylesheets and scripts ka path hai
+// app.use routes ke liye chalta hai 
+app.use(express.static(path.join(__dirname, 'public')));
+
+// expressjs parser- se 2 line add internet se karna using for post in html
+app.use(express.urlencoded({ extended: false }))
+app.use(express.json())
+
+// index page
+// use res.render to load up an ejs view file
+app.get('/', function(req, res) {
+  res.render('index');
+  // views ke under koi bhi page render kar rhe hai to 
+  // hume index,ejs nhi likhna hai automatice likh jata hai 
+});
+
+
+//3.From post type ka data -> req.body ko use krone ke liye  index.ejs me form  
+      //action method =“post” tab chalet
+
+app.post('/login', function(req, res) {
+  res.send(req.body);
+  // jisme double or single code nhi hota use variable, function, property
+});
+
+// about page
+app.get('/contact', function(req, res) {
+  res.send('contact');
+});
+
+app.listen(3000,()=>{
+  console.log("listening port 3000...")
+});
+
+
+
+
+
+
+                                                  // Creating A server
+
+// 1. create a server - 
+
+// const http = require("http");
+
+// const server =  http.createServer((req,res)=>{
+//     res.end("Hello from the others sides");
+// });
+
+// server.listen(8000,"127.0.0.1",()=>{
+//     console.log("listening to the port 8000....");
+// })
+
+
+
+
+                                                                          // express js
+
+
+// 1.install express and ejs package command is - npm i express ejs
+// and install nodemon package - npm i nodemon
+
+const express = require('express');
+// call the express
+const app = express();
+const path = require("path");
+
+// set the view engine to ejs
+app.set('view engine', 'ejs');
+
+// static imges, stylesheets and scripts ka path hai
+// app.use routes ke liye chalta hai 
+
+app.use(express.static(path.join(__dirname, 'public')));
+
+
+// index page
+// use res.render to load up an ejs view file
+
+app.get('/', function(req, res) {
+  res.render('index');
+  // views ke under koi bhi page render kar rhe hai to 
+  // hume index,ejs nhi likhna hai automatice likh jata hai 
+});
+
+// more page
+app.get('/more', function(req, res) {
+  res.render('more');
+  // jisme double or single code nhi hota use variable, function, property
+});
+
+// about page
+app.get('/contact', function(req, res) {
+  res.render('contact');
+});
+
+app.listen(3000,()=>{
+  console.log("listening port 3000...")
+});
+
+
+
+
+
+
+                                                Data server me bhejna 
+
+1.Dynamic routes ka data -> req.params
+
+2.From get type ka data -> req.query
+
+3.From post type ka data -> req.body
+
+                                                
+app.get('/login', function(req, res) {
+  res.send('login');
+ });
+
+
+
+
+
+
+                      Express-generator install command Mac terminal me maker
+
+       cd Desktop    
+express  Nodemailer  --view=ejs
+Fir one  folder mein npm I express command
+Express-generator
+Fir npm i mongoose passport passport-local-mongoose express-session
+
+                      OR
+
+
+cd Desktop    
+ls
+cls
+clear
+express  new --view=ejs
+cd folder name ("kuchh bhi")
+npm i
+code .
+cls
+
+
+
+Express generator ki  js file ko calano ke liye npx nodemon fir y enter karna hoga MacBook main ye command bar bar dalni hogi koi shortcut nhi h
+
+
+
+React JS
+
+
+a.React ek popular JavaScript library hai jo web applications banane ke liye istemal hoti hai. Yah UI (User Interface) components ko develop karne mein madad karta hai. React ka mukhya uddeshya ek powerful aur interactive user interface banane mein madad karna hai. Isme reusable aur maintainable code likhne ki suvidha hoti hai, jo developers ke liye kaafi faydemand hai. React virtual DOM ka istemal karta hai jo performance ko badhata hai, aur iska use single page applications (SPA) ke develop karne mein hota hai.
+
+
+b.Ajax-
+Ajax (Asynchronous JavaScript and XML) ek technique hai jo web pages ko dynamic aur interactive banane mein madad karta hai. Isse web pages ko reload kiye bina server se data exchange karne ki suvidha hoti hai. Jab user koi action lete hai jaise button click ya form submit, tab Ajax se background mein server se data lekar aata hai aur page ko update karta hai. Isse user experience improve hota hai kyunki page reload nahi hota aur data turant dikhaya ja sakta hai. Yeh technique JavaScript ka use karti hai aur modern web development mein kaafi popular hai.
+
+
+c.Api-
+API (Application Programming Interface) ek tarah ka set hota hai jo ek software application ya service ke functions aur features ko dusre applications se interact karne ke liye allow karta hai. Ye interactions hoti hai data exchange, commands, aur requests ke roop mein. APIs ka upyog hota hai jab ek application dusri application se kuch maangti hai ya information share karti hai.
+
+Example-
+Jaise maan lo aap ek restaurant ke website par hote hain aur wahan se menu dekhna chahte hain. Jab aap menu page open karte hain, website background mein API se connect hoti hai jo restaurant ke servers se menu ki information fetch karti hai aur aapko dikhati hai. Is tarah se API aapke browser aur restaurant ke servers ke beech communication ko allow karti hai, jo aapko menu dekhne ki suvidha deti hai bina directly restaurant se baat kiye.
+APIs alag-alag types ke hote hain jaise RESTful APIs, JSON APIs, SOAP APIs, etc. Inka use web development, mobile applications, cloud services, aur bahut se aur fields mein hota hai jahan data exchange aur communication ki zaroorat hoti hai.
+
+Rest Api-
+RESTful API ek approach hai jisme web services ko design karte waqt REST principles ka istemal kiya jata hai. Ye APIs stateless hoti hain, jisme HTTP methods (GET, POST, PUT, DELETE) ka istemal hota hai resources ko access aur manipulate karne ke liye. Har resource ka ek unique URL hota hai. Example:
+Maan lo aap ek social media app use kar rahe hain. Agar aap kisi user ka profile dekhna chahte hain, toh aap RESTful API se request bhejte hain, jaise:
+GET /users/123
+Server phir response mein user ka data JSON format mein bhejega:
+
+Example-
+{
+  "id": 123,
+  "name": "Alice",
+  "age": 25,
+  "email": "alice@example.com"
+}
+Isme "users" resource ke liye URL /users/123 hai, aur GET request se server ne user "Alice" ka data bheja. Ye hai RESTful API ka example, jisme resources ko unique URLs se access kiya jata hai.
+
+
+e.Json-
+JSON (JavaScript Object Notation) ek lightweight data interchange format hai jo data ko store aur exchange karne ke liye istemal hota hai. Ye human-readable hai aur easy to parse hai, isliye web applications, APIs, aur programming languages mein popular hai. JSON mein data key-value pairs mein hota hai jise objects ke roop mein represent kiya jata hai.
+
+ Example:-
+{
+  "name": "John Doe",
+  "age": 30,
+  "city": "New York",
+  "email": "johndoe@example.com"
+}
+
+Is JSON example mein "name", "age", "city", aur "email" keys hain, aur inke corresponding values "John Doe", 30, "New York", aur "johndoe@example.com" hain. Ye format data ko easily organize aur transport karne mein madad karta hai.
+
+
+Axios-
+Axios ek popular JavaScript library hai jo client-side mein HTTP requests bhejne aur receive karne mein madad karta hai. Ye modern web applications mein data fetch karne aur server se interact karne ke liye istemal hota hai. Axios easy-to-use syntax provide karta hai jo developers ko HTTP requests (GET, POST, PUT, DELETE) bhejne mein help karta hai. Iska istemal APIs se data fetch karne, form data submit karne, ya server se data send/receive karne ke liye hota hai. Axios ka use promise-based approach ke saath hota hai, jisse asynchronous operations handle karne mein asani hoti hai. Iska example syntax:
+
+Example-
+axios.get('/api/data')
+  .then(response => {
+    console.log(response.data);
+  })
+  .catch(error => {
+    console.error('Error fetching data:', error);
+  });
+
+Is example mein Axios se server par GET request bheji gayi hai aur server se aane wale response ka data console par print kiya gaya hai.
+
+
+
+New -
+# pahle new folder bnao fir teminal me jake cammand dalo 
+#  1.npm init -y      
+#  2.npm i express --save
+#  fir package.json me changes kro-
+# {
+#   "name": "r12",
+#   "version": "1.0.0",
+#   "description": "",
+#   "main": "index.js",
+#   "scripts": {
+#     "start": "node app.js",
+#     "dev": "nodemon app.js"
+#   },
+#   "keywords": [],
+#   "author": "",
+#   "license": "ISC",
+#   "dependencies": {
+#     "dotenv": "^16.4.5",
+#     "express": "^4.18.3"
+#   }
+# }
+# fir .env file me  PORT = 8080 likho
+# fir app.js me likho-require("dotenv").config({path:"./.env"});
+
+# const express = require("express");
+# const app = express();
+
+# // const dotenv = require("dotenv");
+# // dotenv.config({path: "./.env"});
+
+# // const PORT = process.env.PORT;
+
+
+# app.listen(process.env.PORT, () =>{
+#     console.log(`The Server is running on port ${process.env.PORT   }`);
+# });
+
+# fir node app.js se run kro post ko
+
+
+PORT = 8080
+
+
+# pahle new folder bnao fir teminal me jake cammand dalo 
+#  1.npm init -y      
+#  2.npm i express --save
+#  fir package.json me changes kro-
+# {
+#   "name": "r12",
+#   "version": "1.0.0",
+#   "description": "",
+#   "main": "index.js",
+#   "scripts": {
+#     "start": "node app.js",
+#     "dev": "nodemon app.js"
+#   },
+#   "keywords": [],
+#   "author": "",
+#   "license": "ISC",
+#   "dependencies": {
+#     "dotenv": "^16.4.5",
+#     "express": "^4.18.3"
+#   }
+# }
+# fir .env file me  PORT = 8080 likho
+# fir app.js me likho-require("dotenv").config({path:"./.env"});
+
+# const express = require("express");
+# const app = express();
+
+# // const dotenv = require("dotenv");
+# // dotenv.config({path: "./.env"});
+
+# // const PORT = process.env.PORT;
+
+
+# app.listen(process.env.PORT, () =>{
+#     console.log(`The Server is running on port ${process.env.PORT   }`);
+# });
+
+# fir node app.js se run kro post ko
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
